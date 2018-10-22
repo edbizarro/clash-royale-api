@@ -4,7 +4,6 @@
     <img src="https://developer.clashroyale.com/l_retina.526bc4.png">
 </p>
 <p align="center" style="margin: 30px 0 35px;">PHP Wrapper for the Official <a href="https://developer.clashroyale.com"> Clash Royale API</a>.</p>
-<p align="center" style="margin: 30px 0 35px;">clash-royale-api - Transform your data</p>
 <p align="center">
   <a href='https://semaphoreci.com/edbizarro/clash-royale-api'> <img src='https://semaphoreci.com/api/v1/edbizarro/clash-royale-api/branches/master/badge.svg' alt='Build Status'></a>  
   <a href="https://styleci.io/repos/129276226"><img src="https://styleci.io/repos/129276226/shield?branch=master" alt="StyleCI"></a>  
