@@ -1,41 +1,29 @@
 {
-    "name": "spatie/:package_name",
-    "description": ":package_description",
+    "name": "edbizarro/clash-royale-api",
+    "description": "Clash Royale api PHP SDK",
     "keywords": [
-        "spatie",
-        ":package_name"
+        "clash royale",
+        "clash-royale-api"
     ],
-    "homepage": "https://github.com/spatie/:package_name",
+    "homepage": "https://github.com/edbizarro/clash-royale-api",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://spatie.be",
+            "name": "edbizarro",
+            "email": "edbizarro@gmail.com",
+            "homepage": "https://bizarro.me",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.1"
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6.3",
+        "guzzlehttp/psr7": "^1.4",
+        "tightenco/collect": "^5.7"
     },
     "require-dev": {
         "larapack/dd": "^1.0",
         "phpunit/phpunit": "^7.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Spatie\\Skeleton\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
     },
     "config": {
         "sort-packages": true
@@ -43,11 +31,25 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Edbizarro\\ClashRoyale\\ClashRoyaleServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "Skeleton": "Edbizarro\\ClashRoyale\\ClashRoyaleFacade"
             }
         }
+    },
+    "autoload": {
+        "psr-4": {
+            "Edbizarro\\ClashRoyale\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Edbizarro\\ClashRoyale\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     }
 }

@@ -1,7 +1,7 @@
 # Changelog
 
-All notable changes to `:package_name` will be documented in this file
+All notable changes to `clash-royale-api` will be documented in this file
 
-## 1.0.0 - 201X-XX-XX
+## 0.0.1 - 2018-10-21
 
 - initial release

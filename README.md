@@ -1,11 +1,11 @@
 # Very short description of the package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/:package_name.svg?style=flat-square)](https://packagist.org/packages/spatie/:package_name)
-[![Build Status](https://img.shields.io/travis/spatie/:package_name/master.svg?style=flat-square)](https://travis-ci.org/spatie/:package_name)
-[![Quality Score](https://img.shields.io/scrutinizer/g/spatie/:package_name.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/:package_name)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/:package_name.svg?style=flat-square)](https://packagist.org/packages/spatie/:package_name)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/edbizarro/clash-royale-api.svg?style=flat-square)](https://packagist.org/packages/edbizarro/clash-royale-api)
+[![Build Status](https://img.shields.io/travis/edbizarro/clash-royale-api/master.svg?style=flat-square)](https://travis-ci.org/edbizarro/clash-royale-api)
+[![Quality Score](https://img.shields.io/scrutinizer/g/edbizarro/clash-royale-api.svg?style=flat-square)](https://scrutinizer-ci.com/g/edbizarro/clash-royale-api)
+[![Total Downloads](https://img.shields.io/packagist/dt/edbizarro/clash-royale-api.svg?style=flat-square)](https://packagist.org/packages/edbizarro/clash-royale-api)
 
-**Note:** Replace ```:author_name``` ```:author_username``` ```:author_email``` ```:package_name``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
+**Note:** Replace ```edbizarro``` ```:author_username``` ```edbizarro@gmail.com``` ```clash-royale-api``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
 
 This is where your description should go. Try and limit it to a paragraph or two.
 
@@ -14,7 +14,7 @@ This is where your description should go. Try and limit it to a paragraph or two
 You can install the package via composer:
 
 ```bash
-composer require spatie/:package_name
+composer require spatie/clash-royale-api
 ```
 
 ## Usage
@@ -52,7 +52,7 @@ We publish all received postcards [on our company website](https://spatie.be/en/
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [edbizarro](https://github.com/:author_username)
 - [All Contributors](../../contributors)
 
 ## Support us

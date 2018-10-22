@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Skeleton\Tests;
+namespace Edbizarro\ClashRoyale\Tests;
 
 use PHPUnit\Framework\TestCase;
 
