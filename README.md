@@ -1,11 +1,14 @@
-# Very short description of the package
+# Clash Royale API
+
+<p align="center">
+    <img src="https://developer.clashroyale.com/l_retina.526bc4.png">
+</p>
+<p align="center" style="margin: 30px 0 35px;">PHP Wrapper for the Official <a href="https://developer.clashroyale.com"> Clash Royale API</a>.</p>
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/edbizarro/clash-royale-api.svg?style=flat-square)](https://packagist.org/packages/edbizarro/clash-royale-api)
 [![Build Status](https://img.shields.io/travis/edbizarro/clash-royale-api/master.svg?style=flat-square)](https://travis-ci.org/edbizarro/clash-royale-api)
 [![Quality Score](https://img.shields.io/scrutinizer/g/edbizarro/clash-royale-api.svg?style=flat-square)](https://scrutinizer-ci.com/g/edbizarro/clash-royale-api)
 [![Total Downloads](https://img.shields.io/packagist/dt/edbizarro/clash-royale-api.svg?style=flat-square)](https://packagist.org/packages/edbizarro/clash-royale-api)
-
-PH Wrapper for the Official [Clash Royale API](mhttps://developer.clashroyale.com).
 
 ## Installation
 
@@ -21,8 +24,12 @@ Example get clan info
 
 ``` php
 <?php
+use Edbizarro\ClashRoyale\Api;
+use Edbizarro\ClashRoyale\Clan;
 
-Api::setToken($apiToken);
+...
+
+Api::setToken($apiToken); // @see https://developer.clashroyale.com
 
 $clan = new Clan('clan_tag');
 
@@ -35,6 +42,10 @@ Search for a clan
 
 ``` php
 <?php
+use Edbizarro\ClashRoyale\Api;
+use Edbizarro\ClashRoyale\Clan;
+
+...
 
 Api::setToken($apiToken);
 
@@ -42,12 +53,6 @@ $clan = new Clan();
 
 var_dump($clan->search(['name' => 'clan name']));
 
-```
-
-### Testing
-
-``` bash
-composer test
 ```
 
 ### Changelog
