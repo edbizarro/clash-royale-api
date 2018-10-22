@@ -5,23 +5,43 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/edbizarro/clash-royale-api.svg?style=flat-square)](https://scrutinizer-ci.com/g/edbizarro/clash-royale-api)
 [![Total Downloads](https://img.shields.io/packagist/dt/edbizarro/clash-royale-api.svg?style=flat-square)](https://packagist.org/packages/edbizarro/clash-royale-api)
 
-**Note:** Replace ```edbizarro``` ```:author_username``` ```edbizarro@gmail.com``` ```clash-royale-api``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
-
-This is where your description should go. Try and limit it to a paragraph or two.
+PH Wrapper for the Official [Clash Royale API](mhttps://developer.clashroyale.com).
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require spatie/clash-royale-api
+composer require edbizarro/clash-royale-api
 ```
 
 ## Usage
 
+Example get clan info
+
 ``` php
-$skeleton = new Spatie\Skeleton();
-echo $skeleton->echoPhrase('Hello, Spatie!');
+<?php
+
+Api::setToken($apiToken);
+
+$clan = new Clan('clan_tag');
+
+var_dump($clan->get());
+
+```
+
+
+Search for a clan
+
+``` php
+<?php
+
+Api::setToken($apiToken);
+
+$clan = new Clan();
+
+var_dump($clan->search(['name' => 'clan name']));
+
 ```
 
 ### Testing
@@ -42,25 +62,10 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 If you discover any security related issues, please email freek@spatie.be instead of using the issue tracker.
 
-## Postcardware
-
-You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
-
-Our address is: Spatie, Samberstraat 69D, 2060 Antwerp, Belgium.
-
-We publish all received postcards [on our company website](https://spatie.be/en/opensource/postcards).
-
 ## Credits
 
-- [edbizarro](https://github.com/:author_username)
+- [Eduardo Bizarro](https://github.com/edbizarro)
 - [All Contributors](../../contributors)
-
-## Support us
-
-Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
-
-Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/spatie). 
-All pledges will be dedicated to allocating workforce on maintenance and new awesome stuff.
 
 ## License
 
