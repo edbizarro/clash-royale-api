@@ -2,7 +2,10 @@
 
 namespace Edbizarro\ClashRoyale;
 
+use Exception;
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
+use Psr\Http\Message\ResponseInterface;
 
 class Api
 {
@@ -13,6 +16,11 @@ class Api
     /** @var \GuzzleHttp\Client */
     protected $client;
 
+    protected static $apiToken;
+
+    /**
+     * @var array
+     */
     protected static $defaultClientOptions = [
         RequestOptions::COOKIES => true,
         RequestOptions::CONNECT_TIMEOUT => 10,
@@ -21,35 +29,44 @@ class Api
     ];
 
     /**
-     * @param array $clientOptions
+     * @param $token
      *
-     * @return Api
+     * @return $this
      */
-    public static function create(array $clientOptions = []): Api
+    public static function setApiToken($token)
     {
-        $clientOptions = count($clientOptions)
-            ? $clientOptions
-            : static::$defaultClientOptions;
-        $client = new Client($clientOptions);
-
-        return new static($client);
+        static::$apiToken = $token;
     }
 
     public function __construct(Client $client = null)
     {
-        $this->client = $client;
+        $clientOptions = static::$defaultClientOptions;
+
+        $clientOptions = array_merge($clientOptions, [
+            RequestOptions::HEADERS => [
+                'Authorization' => 'Bearer '.static::$apiToken,
+                'Accept' => 'application/json'
+            ]
+        ]);
+
+        $this->client = $client ?? new Client($clientOptions);
     }
 
     /**
      * @param $resource
      * @param array $options
      *
-     * @return \Psr\Http\Message\ResponseInterface
+     * @return ResponseInterface
+     * @throws Exception
      */
-    public function makeRequest($resource, array $options)
+    public function makeRequest($resource, array $options = []): ResponseInterface
     {
+        if (! static::$apiToken) {
+            throw new Exception('API token must be provided');
+        }
+
         return $this->client->get(
-            $this->apiUrl.$this->apiVersion.$resource,
+            $this->apiUrl.$this->apiVersion.'/'.$resource,
             ['query' => $options]
         );
     }
