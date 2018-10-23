@@ -1,5 +1,3 @@
-# Clash Royale API
-
 <p align="center">
     <img src="https://developer.clashroyale.com/l_retina.526bc4.png">
 </p>
