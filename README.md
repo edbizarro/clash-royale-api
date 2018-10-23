@@ -5,7 +5,7 @@
 <p align="center">
   <a href='https://semaphoreci.com/edbizarro/clash-royale-api'> <img src='https://semaphoreci.com/api/v1/edbizarro/clash-royale-api/branches/master/badge.svg' alt='Build Status'></a>  
   <a href="https://styleci.io/repos/129276226"><img src="https://styleci.io/repos/129276226/shield?branch=master" alt="StyleCI"></a>  
-  <a href="https://codeclimate.com/github/edbizarro/clash-royale-api/maintainability"><img src="https://api.codeclimate.com/v1/badges/25524f733a23fb514c5c/maintainability" /></a>
+  <a href="https://codeclimate.com/github/edbizarro/clash-royale-api/maintainability"><img src="https://api.codeclimate.com/v1/badges/d9f87681a2cd5e496c63/maintainability" /></a>
   <a href="https://packagist.org/packages/edbizarro/clash-royale-api"><img src="https://poser.pugx.org/edbizarro/clash-royale-api/v/stable.svg" alt="Latest Stable Version"></a>
   <a href="https://packagist.org/packages/edbizarro/clash-royale-api"><img src="https://poser.pugx.org/edbizarro/clash-royale-api/license.svg" alt="License"></a>
     <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fedbizarro%2Fclash-royale-api?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fedbizarro%2Fclash-royale-api.svg?type=small"/></a>
