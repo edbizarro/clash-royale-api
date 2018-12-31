@@ -9,13 +9,18 @@ use Psr\Http\Message\ResponseInterface;
 
 class Api
 {
+    /** @var string */
     protected $apiUrl = 'https://api.clashroyale.com/';
 
+    /** @var string */
     protected $apiVersion = 'v1';
 
     /** @var \GuzzleHttp\Client */
     protected $client;
 
+    /**
+     * @var string
+     */
     protected static $apiToken;
 
     /**

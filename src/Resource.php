@@ -12,6 +12,9 @@ abstract class Resource
      */
     protected $api;
 
+    /**
+     * @var string
+     */
     protected $resourceName;
 
     /**
@@ -31,14 +34,33 @@ abstract class Resource
     }
 
     /**
+     * @param array $options
+     *
      * @return Collection
      * @throws \Exception
      */
-    public function get(): Collection
+    public function get(array $options = []): Collection
     {
-        return $this->response($this->api->makeRequest(
-            $this->resourceName.'/'.rawurlencode($this->resourceIdentifier)
-        ));
+        return $this->response($this->makeRequest($options));
+    }
+
+    /**
+     * @param array $options
+     *
+     * @return \Psr\Http\Message\ResponseInterface
+     * @throws \Exception
+     */
+    protected function makeRequest(array $options = []): \Psr\Http\Message\ResponseInterface
+    {
+        return $this->api->makeRequest($this->getResourceFinalUrl(), $options);
+    }
+
+    /**
+     * @return string
+     */
+    protected function getResourceFinalUrl(): string
+    {
+        return $this->resourceName.'/'.rawurlencode($this->resourceIdentifier);
     }
 
     /**
