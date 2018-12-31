@@ -86,6 +86,32 @@ $clan->currentWar();
 ``` 
 List [with all current war parameters](https://developer.clashroyale.com/api-docs/index.html#!/clans/getCurrentWar)
 
+
+
+### Player
+
+#### Info
+
+``` php
+<?php
+use Edbizarro\ClashRoyale\Clan;
+
+$player = new Player('player_tag');
+$player->get();
+
+```
+
+#### Battle log
+
+``` php
+<?php
+use Edbizarro\ClashRoyale\Clan;
+
+$player = new Player('player_tag');
+$player->battles();
+
+```
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
