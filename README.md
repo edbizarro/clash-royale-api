@@ -23,8 +23,8 @@ composer require edbizarro/clash-royale-api
 
 > Before use this library visit [https://developer.clashroyale.com](https://developer.clashroyale.com) to get an API TOKEN
 
-Make sure to initialize the API with a valid token before making requests `
-Api::setToken($apiToken);`
+Make sure to initialize the API `
+Api::setApiToken($apiToken)` with a valid token before making requests 
 
 ### Clan
 
@@ -39,6 +39,21 @@ $clan->get();
 
 ```
 
+#### Members
+
+``` php
+<?php
+use Edbizarro\ClashRoyale\Clan;
+
+$clan = new Clan('clan_tag');
+$clan->members();
+
+// or
+
+$clan->members($parameters);
+
+``` 
+List [with all members parameters](https://developer.clashroyale.com/api-docs/index.html#!/clans/getClanMembers)
 
 #### Search
 
@@ -50,6 +65,7 @@ $clan = new Clan();
 $clan->search(['name' => 'clan name']);
 
 ```
+List [with all search parameters](https://developer.clashroyale.com/api-docs/index.html#!/clans/searchClans)
 
 ### Changelog
 
