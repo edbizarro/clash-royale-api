@@ -10,7 +10,7 @@
   <a href="https://packagist.org/packages/edbizarro/clash-royale-api"><img src="https://poser.pugx.org/edbizarro/clash-royale-api/license.svg" alt="License"></a>  
 </p>
 
-## Installation
+# Installation
 
 You can install the package via composer:
 
@@ -18,16 +18,16 @@ You can install the package via composer:
 composer require edbizarro/clash-royale-api
 ```
 
-## Usage
+# Usage
 
 > Before use this library visit [https://developer.clashroyale.com](https://developer.clashroyale.com) to get an API TOKEN
 
 Make sure to initialize the API `
 Api::setApiToken($apiToken)` with a valid token before making requests 
 
-### Clan
+## Clan
 
-#### Info
+### Info
 
 ``` php
 <?php
@@ -38,7 +38,7 @@ $clan->get();
 
 ```
 
-#### Search
+### Search
 
 ``` php
 <?php
@@ -50,7 +50,7 @@ $clan->search(['name' => 'clan name']);
 ```
 List [with all search parameters](https://developer.clashroyale.com/api-docs/index.html#!/clans/searchClans)
 
-#### Members
+### Members
 
 ``` php
 <?php
@@ -62,7 +62,7 @@ $clan->members();
 ``` 
 List [with all members parameters](https://developer.clashroyale.com/api-docs/index.html#!/clans/getClanMembers)
 
-#### War Log
+### War Log
 
 ``` php
 <?php
@@ -74,7 +74,7 @@ $clan->warlog();
 ``` 
 List [with all warlog parameters](https://developer.clashroyale.com/api-docs/index.html#!/clans/getClanWarLog)
 
-#### Current War
+### Current War
 
 ``` php
 <?php
@@ -88,9 +88,9 @@ List [with all current war parameters](https://developer.clashroyale.com/api-doc
 
 
 
-### Player
+## Player
 
-#### Info
+### Info
 
 ``` php
 <?php
@@ -101,7 +101,7 @@ $player->get();
 
 ```
 
-#### Battle log
+### Battle log
 
 ``` php
 <?php
