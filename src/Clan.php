@@ -46,4 +46,40 @@ class Clan extends Resource
             )
         );
     }
+
+    /**
+     * @param array $options
+     *
+     * @return Collection
+     * @throws Exception
+     *
+     * @see https://developer.clashroyale.com/api-docs/index.html#!/clans/getClanWarLog
+     */
+    public function warlog(array $options = []): Collection
+    {
+        return $this->response(
+            $this->api->makeRequest(
+                $this->getResourceFinalUrl().'/warlog',
+                $options
+            )
+        );
+    }
+
+    /**
+     * @param array $options
+     *
+     * @return Collection
+     * @throws Exception
+     *
+     * @see https://developer.clashroyale.com/api-docs/index.html#!/clans/getCurrentWar
+     */
+    public function currentWar(array $options = []): Collection
+    {
+        return $this->response(
+            $this->api->makeRequest(
+                $this->getResourceFinalUrl().'/currentwar',
+                $options
+            )
+        );
+    }
 }
