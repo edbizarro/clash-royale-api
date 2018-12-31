@@ -50,8 +50,8 @@ class Api
         $clientOptions = array_merge($clientOptions, [
             RequestOptions::HEADERS => [
                 'Authorization' => 'Bearer '.static::$apiToken,
-                'Accept' => 'application/json'
-            ]
+                'Accept' => 'application/json',
+            ],
         ]);
 
         $this->client = $client ?? new Client($clientOptions);
