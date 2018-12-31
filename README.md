@@ -7,8 +7,7 @@
   <a href="https://github.styleci.io/repos/154075287"><img src="https://github.styleci.io/repos/154075287/shield?branch=master" alt="StyleCI"></a>  
   <a href="https://codeclimate.com/github/edbizarro/clash-royale-api/maintainability"><img src="https://api.codeclimate.com/v1/badges/d9f87681a2cd5e496c63/maintainability" /></a>
   <a href="https://packagist.org/packages/edbizarro/clash-royale-api"><img src="https://poser.pugx.org/edbizarro/clash-royale-api/v/stable.svg" alt="Latest Stable Version"></a>
-  <a href="https://packagist.org/packages/edbizarro/clash-royale-api"><img src="https://poser.pugx.org/edbizarro/clash-royale-api/license.svg" alt="License"></a>
-    <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fedbizarro%2Fclash-royale-api?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fedbizarro%2Fclash-royale-api.svg?type=small"/></a>
+  <a href="https://packagist.org/packages/edbizarro/clash-royale-api"><img src="https://poser.pugx.org/edbizarro/clash-royale-api/license.svg" alt="License"></a>  
 </p>
 
 ## Installation
