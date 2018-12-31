@@ -112,7 +112,7 @@ $player->battles();
 
 ```
 
-### Changelog
+## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
@@ -126,7 +126,7 @@ If you discover any security related issues, please email edbizarro@gmail.com in
 
 ## Credits
 
-- [Eduardo Bizarro](https://github.com/edbizarro)
+- [EdBizarro](https://github.com/edbizarro)
 - [All Contributors](../../contributors)
 
 ## License
