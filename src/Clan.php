@@ -28,4 +28,22 @@ class Clan extends Resource
             $options
         ));
     }
+
+    /**
+     * @param array $options
+     *
+     * @return Collection
+     * @throws Exception
+     *
+     * @see https://developer.clashroyale.com/api-docs/index.html#!/clans/getClanMembers
+     */
+    public function members(array $options = []): Collection
+    {
+        return $this->response(
+            $this->api->makeRequest(
+                $this->getResourceFinalUrl() . '/members',
+                $options
+            )
+        );
+    }
 }
