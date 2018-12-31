@@ -38,22 +38,6 @@ $clan->get();
 
 ```
 
-#### Members
-
-``` php
-<?php
-use Edbizarro\ClashRoyale\Clan;
-
-$clan = new Clan('clan_tag');
-$clan->members();
-
-// or
-
-$clan->members($parameters);
-
-``` 
-List [with all members parameters](https://developer.clashroyale.com/api-docs/index.html#!/clans/getClanMembers)
-
 #### Search
 
 ``` php
@@ -65,6 +49,42 @@ $clan->search(['name' => 'clan name']);
 
 ```
 List [with all search parameters](https://developer.clashroyale.com/api-docs/index.html#!/clans/searchClans)
+
+#### Members
+
+``` php
+<?php
+use Edbizarro\ClashRoyale\Clan;
+
+$clan = new Clan('clan_tag');
+$clan->members();
+
+``` 
+List [with all members parameters](https://developer.clashroyale.com/api-docs/index.html#!/clans/getClanMembers)
+
+#### War Log
+
+``` php
+<?php
+use Edbizarro\ClashRoyale\Clan;
+
+$clan = new Clan('clan_tag');
+$clan->warlog();
+
+``` 
+List [with all warlog parameters](https://developer.clashroyale.com/api-docs/index.html#!/clans/getClanWarLog)
+
+#### Current War
+
+``` php
+<?php
+use Edbizarro\ClashRoyale\Clan;
+
+$clan = new Clan('clan_tag');
+$clan->currentWar();
+
+``` 
+List [with all current war parameters](https://developer.clashroyale.com/api-docs/index.html#!/clans/getCurrentWar)
 
 ### Changelog
 
