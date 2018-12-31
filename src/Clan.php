@@ -41,7 +41,7 @@ class Clan extends Resource
     {
         return $this->response(
             $this->api->makeRequest(
-                $this->getResourceFinalUrl() . '/members',
+                $this->getResourceFinalUrl().'/members',
                 $options
             )
         );
