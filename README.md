@@ -132,3 +132,9 @@ If you discover any security related issues, please email edbizarro@gmail.com in
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+---
+
+<p align="center">
+    <img src="https://i.imgur.com/bn5hOeP.png">
+</p>
