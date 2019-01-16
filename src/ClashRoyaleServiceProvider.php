@@ -13,7 +13,7 @@ class ClashRoyaleServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/clash-royale.php' => config_path('clash-royale.php'),
+                __DIR__ . '/../config/clash-royale.php' => config_path('clash-royale.php'),
             ], 'config');
         }
     }
@@ -23,6 +23,6 @@ class ClashRoyaleServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/clash-royale.php', 'clash-royale');
+        $this->mergeConfigFrom(__DIR__ . '/../config/clash-royale.php', 'clash-royale');
     }
 }

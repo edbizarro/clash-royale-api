@@ -49,7 +49,7 @@ class Api
 
         $clientOptions = array_merge($clientOptions, [
             RequestOptions::HEADERS => [
-                'Authorization' => 'Bearer '.static::$apiToken,
+                'Authorization' => 'Bearer ' . static::$apiToken,
                 'Accept' => 'application/json',
             ],
         ]);
@@ -71,7 +71,7 @@ class Api
         }
 
         return $this->client->get(
-            $this->apiUrl.$this->apiVersion.'/'.$resource,
+            $this->apiUrl . $this->apiVersion . '/' . $resource,
             ['query' => $options]
         );
     }

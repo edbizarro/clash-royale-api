@@ -29,7 +29,7 @@ abstract class Resource
      */
     public function __construct(string $resourceIdentifier = null)
     {
-        $this->api = new Api();
+        $this->api                = new Api();
         $this->resourceIdentifier = $resourceIdentifier;
     }
 
@@ -60,7 +60,7 @@ abstract class Resource
      */
     protected function getResourceFinalUrl(): string
     {
-        return $this->resourceName.'/'.rawurlencode($this->resourceIdentifier);
+        return $this->resourceName . '/' . rawurlencode($this->resourceIdentifier);
     }
 
     /**
