@@ -35,10 +35,7 @@
         "laravel": {
             "providers": [
                 "Edbizarro\\ClashRoyale\\ClashRoyaleServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "Edbizarro\\ClashRoyale\\ClashRoyaleFacade"
-            }
+            ]
         }
     },
     "autoload": {

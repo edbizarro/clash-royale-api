@@ -3,7 +3,6 @@
 namespace Edbizarro\ClashRoyale;
 
 use Illuminate\Support\ServiceProvider;
-use Edbizarro\ClashRoyale\Api;
 
 class ClashRoyaleServiceProvider extends ServiceProvider
 {
@@ -33,6 +32,17 @@ class ClashRoyaleServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/clash-royale.php', 'clash-royale');
 
+        $this->offerPublishing();
+        
         Api::setApiToken(config('clash-royale.token'));
+    }
+
+    protected function offerPublishing(): void
+    {
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/../config/clash-royale.php' => config_path('clash-royale.php'),
+            ], 'clash-royale');
+        }
     }
 }
