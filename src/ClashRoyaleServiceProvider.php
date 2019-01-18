@@ -18,11 +18,7 @@ class ClashRoyaleServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            $this->publishes([
-                __DIR__ . '/../config/clash-royale.php' => config_path('clash-royale.php'),
-            ], 'config');
-        }
+        $this->registerPublishing();
     }
 
     /**
@@ -30,14 +26,15 @@ class ClashRoyaleServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/clash-royale.php', 'clash-royale');
+        $this->mergeConfigFrom(
+            __DIR__.'/../config/clash-royale.php',
+            'clash-royale'
+        );
 
-        $this->offerPublishing();
-        
         Api::setApiToken(config('clash-royale.token'));
     }
 
-    protected function offerPublishing(): void
+    protected function registerPublishing(): void
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
