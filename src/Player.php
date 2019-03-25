@@ -21,7 +21,7 @@ class Player extends Resource
     {
         return $this->response(
             $this->api->makeRequest(
-                $this->getResourceFinalUrl() . '/battlelog',
+                $this->getResourceFinalUrl().'/battlelog',
                 $options
             )
         );
