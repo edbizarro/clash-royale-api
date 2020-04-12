@@ -11,7 +11,7 @@ class Player extends Resource
 
     /**
      *
-     * Returns a list of battles that the Player has recently participated in
+     * Returns a list of battles that the Player has recently participated in.
      *
      * @param array $options
      *
@@ -31,7 +31,7 @@ class Player extends Resource
     }
 
     /**
-     * Returns the chests that are upcoming for the Player
+     * Returns the chests that are upcoming for the Player.
      *
      * @param array $options
      *
