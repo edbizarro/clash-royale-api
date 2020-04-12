@@ -10,7 +10,6 @@ class Player extends Resource
     protected $resourceName = 'players';
 
     /**
-     *
      * Returns a list of battles that the Player has recently participated in.
      *
      * @param array $options
