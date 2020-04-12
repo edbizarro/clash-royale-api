@@ -94,7 +94,7 @@ List [with all current war parameters](https://developer.clashroyale.com/api-doc
 
 ``` php
 <?php
-use Edbizarro\ClashRoyale\Clan;
+use Edbizarro\ClashRoyale\Player;
 
 $player = new Player('player_tag');
 $player->get();
@@ -105,10 +105,21 @@ $player->get();
 
 ``` php
 <?php
-use Edbizarro\ClashRoyale\Clan;
+use Edbizarro\ClashRoyale\Player;
 
 $player = new Player('player_tag');
 $player->battles();
+
+```
+
+### Upcoming Chests
+
+``` php
+<?php
+use Edbizarro\ClashRoyale\Player;
+
+$player = new Player('player_tag');
+$player->upcomingChests();
 
 ```
 
