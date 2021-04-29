@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: composer
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: orchestra/testbench
+    versions:
+    - 6.11.0
+    - 6.12.0
+    - 6.13.0
+    - 6.14.0
+    - 6.15.0
+    - 6.16.0
+    - 6.9.0
+  - dependency-name: tightenco/collect
+    versions:
+    - 8.19.0
