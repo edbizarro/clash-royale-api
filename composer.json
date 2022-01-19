@@ -19,7 +19,7 @@
         "php": "^7.1",
         "guzzlehttp/guzzle": "^7.0",
         "guzzlehttp/psr7": "^1.4",
-        "tightenco/collect": "^7.4"
+        "tightenco/collect": "^8.80"
     },
     "require-dev": {
         "larapack/dd": "^1.0",
